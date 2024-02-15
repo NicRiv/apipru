@@ -1,0 +1,29 @@
+@red = http://localhost:3000/
+
+GET {{red}}tasks
+
+###
+GET {{red}}tasks/2
+
+###
+GET {{red}}tasks/count
+
+###
+POST {{red}}tasks
+Content-Type: application/json
+
+{
+    "title": "OSTIA",
+    "description":"si o que?"
+}
+
+###
+DELETE {{red}}tasks/6
+
+###
+PUT {{red}}tasks/2
+Content-Type: application/json
+
+{
+    "title":"la tarea DoS"
+}
